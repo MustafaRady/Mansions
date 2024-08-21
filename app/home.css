@@ -1,0 +1,22 @@
+
+.title{
+    position: absolute;
+    top: 42%;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.image_container {
+    max-height: 550px; /* Set the desired height */
+    overflow: hidden; /* Hide overflow if needed */
+    width: 100vw;
+}
+
+.image {
+    width: 100%; /* Make the image fill the container's width */
+    height: auto; /* Make the image fill the container's height */
+    
+}
+

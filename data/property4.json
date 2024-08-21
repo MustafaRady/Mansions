@@ -1,0 +1,12 @@
+{
+    "id": "4",
+    "title": "Luxury Penthouse",
+    "price": "$1,200,000",
+    "location": "1010 Pine Street, Uptown",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "size": "2,800 sq ft",
+    "image": "/images/property4.jpg",
+    "description": "An exquisite penthouse with high-end finishes, private terrace, and stunning skyline views."
+  }
+  

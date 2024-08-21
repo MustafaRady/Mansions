@@ -1,0 +1,36 @@
+
+@keyframes scrollDown {
+    
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scrollUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+
+.animated_1{
+    animation : scrollDown 0.5s ease-in-out;
+    animation-fill-mode: forwards; /* Keeps the final state after animation */
+
+}
+
+.animated_2{
+    animation : scrollUp 0.5s ease-in-out;
+    animation-fill-mode: forwards; /* Keeps the final state after animation */
+
+    
+}
