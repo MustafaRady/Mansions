@@ -153,6 +153,7 @@ const SingleProperty = ({params}) => {
                     (url) => {
                       return (
                         <Image
+                        className="max-h-96"
                           key={url}
                           src={url}
                           alt={url}
@@ -205,7 +206,7 @@ const SingleProperty = ({params}) => {
                           width={35}
                           height={20}
                           alt="plus"
-                          className={`cursor-pointer transition-transform duration-300 ${togglePropertyDetails ? 'rotate-90' : ''} `}
+                          className={`cursor-pointer max-h-8 transition-transform duration-300 ${togglePropertyDetails ? 'rotate-90' : ''} `}
                           onClick={()=>handleTogglePropertyDetails()}
                         >
                         </Image>
@@ -216,7 +217,7 @@ const SingleProperty = ({params}) => {
                         <div className={`${togglePropertyDetails ? 'appear' : ''}`}>
                           <ul className="flex flex-col ">
                             <li><strong>ID :</strong> {property?.id}</li>
-                            <li><strong>APPROX SIZE :</strong> {property?.size}</li>
+                            <li><strong>APPROX SIZE :</strong> {property?.area}</li>
                             <li><strong>CAR :</strong> {property?.carSpaces}</li>
                             <li><strong>BED :</strong> {property?.bedrooms}</li>
                             <li><strong>BATH:</strong> {property?.bathrooms}</li>
@@ -245,9 +246,9 @@ const SingleProperty = ({params}) => {
                         <div className={`${toggleFeatures ? 'appear' : ''} pl-4`}>
                           <ul className="flex flex-col gap-2">
                             {property?.features.map(
-                              (feature) => {
+                              (feature,index) => {
                                 return (
-                                  <li key={feature}>{feature}</li>
+                                  <li key={index}>{feature}</li>
                                 )
                               }
                             )}

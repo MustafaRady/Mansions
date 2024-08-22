@@ -102,7 +102,7 @@ const Properties = ({type}) => {
             );
           })}
 
-          {properties.length === 0 && (
+          {properties.length === 0 && !loading && (
             <div className='w-full flex justify-center'>
               <h1 className='text-2xl font-semibold'>No properties found</h1>
             </div>

@@ -14,7 +14,3 @@ export const GET = async (req, res) =>{
     }   
 }
 
-
-const filter = (search , minPrice , maxPrice , bed )=>{
-
-}

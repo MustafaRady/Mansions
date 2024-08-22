@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     <div className="bg-white p-8 mx-auto max-w-4xl pt-20">
       <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
       <p className="mb-4">
-        This Privacy Policy governs the manner in which Mansion collects, uses, maintains, and discloses information collected from users (each, a “User”) of the wilsonsre.com.au website (“Site”). This privacy policy applies to the Site and all products and services offered by Mansion.
+        This Privacy Policy governs the manner in which Mansion collects, uses, maintains, and discloses information collected from users (each, a “User”) of the MASNIONS.com.au website (“Site”). This privacy policy applies to the Site and all products and services offered by Mansion.
       </p>
       <h2 className="text-xl font-semibold mb-2">Personal Identification Information</h2>
       <p className="mb-4">

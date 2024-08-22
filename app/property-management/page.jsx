@@ -62,7 +62,7 @@ const PropertyManagement = () => {
                     OUR DIFFERENCE
                 </h1>
                 <p className="text-center text-4xl tracking-wider font-thin">
-                    We are all a part of a team at Wilsons, working together with the common goal of having 'clients for life'.
+                    We are all a part of a team at MASNIONS, working together with the common goal of having 'clients for life'.
                 </p>
             </div>
         </div>

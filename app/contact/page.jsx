@@ -44,7 +44,7 @@ const Contact = () => {
                 </div>
                 <div className="flex-1 w-5/6 m-auto flex items-start justify-start ">
                     <p className="text-xl md:text-2xl font-thin leading-8 "> 
-                        Wilsons is positioned in a great Newtown location opposite Kardinia Park, the home of the Geelong Cats, and adjacent to the thriving Pakington Street retail strip
+                        MASNIONS is positioned in a great Newtown location opposite Kardinia Park, the home of the Geelong Cats, and adjacent to the thriving Pakington Street retail strip
                     </p>
                 </div>
             </div>

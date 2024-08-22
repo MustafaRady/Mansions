@@ -129,8 +129,22 @@ const Menu = ({ setToggleDropdown}) => {
             {/* POPUP */}
             {toggleBuyPopUp && (
               <div className={` ${buyAnimation} text-center text-gray-300 flex flex-row gap-x-7`}>
-                <h2 className="cursor-pointer hover:text-gray-500" ><Link href="/buy/residential">RESIDENTIAL</Link></h2>
-                <h2 className="cursor-pointer hover:text-gray-500"><a href="/buy/commercial">COMMERCIAL</a></h2>
+                <h2 className="cursor-pointer hover:text-gray-500" >
+                  <Link href="/buy/residential" 
+                    onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }
+                  >RESIDENTIAL
+                  </Link>
+                </h2>
+                <h2 className="cursor-pointer hover:text-gray-500"><Link href="/buy/commercial" 
+                    onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>COMMERCIAL</Link></h2>
               </div>
 
             )}
@@ -138,12 +152,27 @@ const Menu = ({ setToggleDropdown}) => {
           </div>
           
           <div className="flex flex-col items-center">
-            <h1 className="text-3xl font-mono font-black cursor-pointer" onClick={()=>{openSellPopUp()}}>SELL</h1>
+            <h1 className="text-3xl font-mono font-black cursor-pointer" 
+              onClick={()=>
+               openSellPopUp()
+              }
+            >SELL</h1>
             
             {toggleSellPopUP &&(
               <div className={` ${sellAnimation} text-center text-gray-300 flex flex-row gap-x-7`}>
-                <h2 className="cursor-pointer hover:text-gray-500" > <a href="/why-mansions">WHY MANSIONS</a></h2>
-                <h2 className="cursor-pointer hover:text-gray-500" > <a href="/request-an-appraisal">REQUEST AN APPRAISAL</a></h2>
+                <h2 className="cursor-pointer hover:text-gray-500" > <Link href="/why-mansions" 
+                  onClick={()=>
+                  setTimeout(()=>{
+                    setClose((prev)=>!prev)
+                  },700)
+                  }
+                >WHY MANSIONS</Link></h2>
+                <h2 className="cursor-pointer hover:text-gray-500" > <Link href="/request-an-appraisal" 
+                    onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>REQUEST AN APPRAISAL</Link></h2>
               </div>
 
             )}
@@ -152,35 +181,69 @@ const Menu = ({ setToggleDropdown}) => {
           </div>
 
           <div className="flex flex-col items-center">
-            <h1 h1 className="text-3xl font-mono font-black cursor-pointer" onClick={()=>{openLeasePopUp()}}>LEASE</h1>
+            <h1 h1 className="text-3xl font-mono font-black cursor-pointer" 
+              onClick={()=>
+                openLeasePopUp()
+              }>LEASE</h1>
             
             {toggleLeasePopUp &&(
               <div className={` ${leaseAnimation} text-center text-gray-300 flex flex-col lg:flex-row gap-x-7`}>
-                <h2 className="cursor-pointer hover:text-gray-500" ><a href="/buy/residential">RESIDENTIAL</a></h2>
-                <h2 className="cursor-pointer hover:text-gray-500"> <a href="/buy/commercial">COMMERCIAL</a></h2>
-                <h2 className="cursor-pointer hover:text-gray-500"><a href="/property-management">PROPERTY MANAGEMENT</a></h2>
-                <h2 className="cursor-pointer hover:text-gray-500"><a href="/services">SERVICES</a></h2>
+                <h2 className="cursor-pointer hover:text-gray-500" ><Link href="/buy/residential" onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>RESIDENTIAL</Link></h2>
+                <h2 className="cursor-pointer hover:text-gray-500"> <Link href="/buy/commercial" onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>COMMERCIAL</Link></h2>
+                <h2 className="cursor-pointer hover:text-gray-500"><Link href="/property-management" onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>PROPERTY MANAGEMENT</Link></h2>
+                <h2 className="cursor-pointer hover:text-gray-500"><Link href="/services" onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>SERVICES</Link></h2>
               </div>
             )}
             
           </div>
 
-          <h1 className="text-3xl font-mono font-black cursor-pointer"><a href="/team">TEAM</a></h1>
+          <h1 className="text-3xl font-mono font-black cursor-pointer"><Link href="/team" onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>TEAM</Link></h1>
 
           <div className="flex flex-col items-center">
           <h1 className="text-3xl font-mono font-black cursor-pointer" onClick={()=>openOurStoryPopUp()}>OUR STORY</h1>
             
             {toggleOurStoryPopUp &&(
-              <div className={` ${leaseAnimation} text-center text-gray-300 flex flex-row gap-x-7` }>
-                <h2 className="cursor-pointer hover:text-gray-500"><a href="/heritage">OUR HERITAGE</a></h2>
-                <h2 className="cursor-pointer hover:text-gray-500"><a href="/location">LOCATION</a></h2>
+              <div className={` ${ourStoryAnimation} text-center text-gray-300 flex flex-row gap-x-7` }>
+                <h2 className="cursor-pointer hover:text-gray-500"><Link href="/heritage" onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>OUR HERITAGE</Link></h2>
+                <h2 className="cursor-pointer hover:text-gray-500"><Link href="/location" onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>LOCATION</Link></h2>
               </div>
             )}
             
           </div>
 
-          <h1 className="text-3xl font-mono font-black cursor-pointer"> <a href="/projects">PROJECTS</a></h1>
-          <h1 className="text-3xl font-mono font-black cursor-pointer"><a href="insights">INSIGHTS</a></h1>
+          <h1 className="text-3xl font-mono font-black cursor-pointer"> <Link href="/projects" onClick={()=>
+                    setTimeout(()=>{
+                      setClose((prev)=>!prev)
+                    },700)
+                    }>PROJECTS</Link></h1>
 
           <div className="flex items-center justify-center gap-x-4">
                 <Image
