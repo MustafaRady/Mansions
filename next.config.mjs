@@ -7,7 +7,9 @@ const nextConfig = {
                 hostname:'firebasestorage.googleapis.com',
                 pathname:'/v0/b/**'
             }
-        ]
+        ],
+        domains: ['firebasestorage.googleapis.com'],
+
     }
 };
 
