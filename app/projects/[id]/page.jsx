@@ -77,6 +77,7 @@ const SingleProperty = ({params}) => {
               height={300}
               alt="home"
               priority={true}
+              unoptimized 
             >
             </Image>
 
@@ -94,6 +95,7 @@ const SingleProperty = ({params}) => {
                         alt="bathroom"
                         className=""
                         priority={true}
+                        
                       >
 
                       </Image>
@@ -160,6 +162,7 @@ const SingleProperty = ({params}) => {
                           width={500}
                           height={500}
                           priority={true}
+                          unoptimized 
                         >
                         </Image>
                       )}
