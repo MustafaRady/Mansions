@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link"
+
 const Footer
  = () => {
   return (
@@ -24,9 +26,25 @@ const Footer
             </div>
             
             <div className='flex flex-col justify-end  ' id='group'>
-                <h1  ><a href="/contact">CONTACT US</a></h1>
-                <h1 ><a href="/terms-of-use">TERMS OF USE</a></h1>
-                <h1><a href="/privacy-and-policy">PRIVACY POLICY</a></h1>
+                <Link
+                    href="/contact"
+                >
+                <h1  >CONTACT US</h1>
+                </Link>
+
+                <Link
+                    href="/terms-of-use"
+                >
+                <h1  >TERMS OF USE</h1>
+                </Link>
+
+                <Link
+                    href="/privacy-and-policy"
+                >
+                <h1  >PRIVACY POLICY</h1>
+                </Link>
+                
+                
 
             </div>
             

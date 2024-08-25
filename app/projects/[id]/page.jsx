@@ -310,23 +310,6 @@ const SingleProperty = ({params}) => {
   )
 }
 
-export const getServerSideProps=async (context)=>{
-  const {id} = context.params;
-  try{
-    const res = await fetch(`/api/property/${id}`);
-    const data = await res.json();
-    return {
-      props:{
-        property:data.data
-      }
-    }
-  }catch(e){
-    console.log(e);
-    return{
-      notFound:true,
-    }
-    
-  }
-}
+
 
 export default SingleProperty 

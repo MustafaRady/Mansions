@@ -101,9 +101,14 @@ const Home = () => {
                     </p>
 
                     <div className='w-full xl:w-1/2'>
-                        <div className='button text-center p-3 cursor-pointer'>
+                        <Link
+                            href={'/why-mansions'}
+                        >
+                            <div className='button text-center p-3 cursor-pointer'>
                             WHY MANSIONS'S
-                        </div>
+                            </div>
+                        </Link>
+                        
                     </div>
                 </div>
             </div>
