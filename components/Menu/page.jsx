@@ -181,7 +181,7 @@ const Menu = ({ setToggleDropdown}) => {
           </div>
 
           <div className="flex flex-col items-center">
-            <h1 h1 className="text-3xl font-mono font-black cursor-pointer" 
+            <h1 className="text-3xl font-mono font-black cursor-pointer" 
               onClick={()=>
                 openLeasePopUp()
               }>LEASE</h1>
