@@ -3,6 +3,7 @@ import Image from "next/image"
 import "./style.css"
 import { useEffect , useState } from "react"
 import Loader from "@components/Loader/page"
+import { notFound } from "next/navigation"
 
 const SingleProperty = ({params}) => {
   const [property, setProperty] = useState(null);
@@ -309,4 +310,23 @@ const SingleProperty = ({params}) => {
   )
 }
 
-export default SingleProperty
+export const getServerSideProps=async (context)=>{
+  const {id} = context.params;
+  try{
+    const res = await fetch(`/api/property/${id}`);
+    const data = await res.json();
+    return {
+      props:{
+        property:data.data
+      }
+    }
+  }catch(e){
+    console.log(e);
+    return{
+      notFound:true,
+    }
+    
+  }
+}
+
+export default SingleProperty 

@@ -2,6 +2,7 @@ import Featured from '@components/FeaturedProp/page'
 import './home.css'
 import Image from 'next/image'
 import Subscribe from '@components/Subscribe/page'
+import Link from 'next/link'
 
 const Home = () => {
 
@@ -44,9 +45,12 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className='button flex w-full md:w-1/2 mx-auto  xl:w-3/4 items-start mt-20 justify-center px-10 py-3'>
-                        OUR HERITAGE
-                    </div>
+                    <Link href={'/heritage'}>
+                        <div className='button flex w-full md:w-1/2 mx-auto  xl:w-3/4 items-start mt-20 justify-center px-10 py-3'>
+                            OUR HERITAGE
+                        </div>
+                    </Link>
+                    
                 </div>
             </div>
 
