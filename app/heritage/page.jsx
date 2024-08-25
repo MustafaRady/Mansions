@@ -1,6 +1,8 @@
 import Subscribe from "@components/Subscribe/page"
 import "./style.css"
 import Image from "next/image"
+import Link from "next/link"
+
 
 const Heritage = () => {
   return (
@@ -85,10 +87,15 @@ const Heritage = () => {
                             Alex and his team have never forsaken the solid Mansion foundation of trust, loyalty, innovation, and old-fashioned hard work. Every day we live these core values and will continue to do so for the next 50 years and beyond.
                             </p>
                         </div>
-
-                        <div className="button p-4 w-full xl:w-1/2 text-center cursor-pointer">
-                            MEET THE TEAM
-                        </div>
+                        
+                        <Link
+                            href={'/team'}
+                        >
+                            <div className="button p-4 w-full xl:w-1/2 text-center cursor-pointer">
+                                MEET THE TEAM
+                            </div>
+                        </Link>
+                        
                     </div>
                 </div>
             </div>
